@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "//UNKNOWN/" "security-config.dtd">
+<map>
+	<action path="/registration.html">
+		<role name="guest"/>
+	</action>
+		<action path="/css/commons.css">
+		<role name="guest"/>
+		<role name="user"/>
+		<role name="admin"/>
+	</action>
+	<action path="/css/extend.css">
+		<role name="guest"/>
+		<role name="user"/>
+		<role name="admin"/>
+	</action>
+	<!-- for all -->
+	<action path="/login.html">
+		<role name="guest"/>
+		<role name="user"/>
+		<role name="admin"/>
+	</action>
+	<action path="/main.html">
+		<role name="guest"/>
+		<role name="user"/>
+		<role name="admin"/>
+	</action>
+		<action path="/index.jsp">
+		<role name="guest"/>
+		<role name="user"/>
+		<role name="admin"/>
+	</action>
+	<action path="/logout.html">
+		<role name="user"/>
+		<role name="admin"/>
+	</action>
+	<action path="/user_room.html">
+		<role name="user"/>
+		<role name="admin"/>
+	</action>
+	<action path="/user_info.html">
+		<role name="user"/>
+		<role name="admin"/>
+	</action>
+	<action path="/create_user.html">
+		<role name="admin"/>
+	</action>
+	<action path="/edit_user.html">
+		<role name="admin"/>
+	</action>
+	<action path="/delete_user.html">
+		<role name="admin"/>
+	</action>
+	<action path="/user_list.html">
+		<role name="user"/>
+		<role name="admin"/>
+	</action>
+	
+	<!-- uses in auth tag -->
+	<action path="guest">
+		<role name="guest"/>
+	</action>
+	<action path="user">
+		<role name="user"/>
+		<role name="admin"/>
+	</action>
+	<action path="admin">
+		<role name="admin"/>
+	</action>
+	<other-actions>
+		<role name="user"/>
+		<role name="admin"/>
+	</other-actions>
+</map>
